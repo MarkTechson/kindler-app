@@ -9,11 +9,26 @@ app.use(express.static("public"));
 
 const users = [
     {
+        "name": "Chop",
+        "tag": "Whaddup! Chop in the hooowwwse",
+        "photo": "https://randomuser.me/api/portraits/lego/3.jpg"
+    },
+    {
+        "name": "Fen",
+        "tag": "Fen, reporting for duty!",
+        "photo": "https://randomuser.me/api/portraits/lego/2.jpg"
+    },
+    {
+        "name": "Charlie",
+        "tag": "Hiya, Charlie here!",
+        "photo": "https://randomuser.me/api/portraits/lego/3.jpg"
+    },
+    {
         "name": "Bex",
         "tag": "Hi, I'm Bex",
         "photo": "https://randomuser.me/api/portraits/lego/4.jpg",
-    }
-]
+    },
+];
 
 // set up some routes
 app.get("/users", (req, res) => {
